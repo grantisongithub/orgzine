@@ -10,37 +10,74 @@ body {
 .header {
   padding-top:10px;
   padding-bottom:10px;
-  padding-right:30px;
   background-color: black;
   color:white;
   overflow:auto;
 }
 
+.headerMenu {
+  text-align: right;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
 .headerItem {
-  font-family: 'Philosopher', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  float:right;
+  display:inline-block;
   margin-right:10px;
 }
 
-.searchBox {
-  margin-left:20px;
-
+.headerItemText {
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  vertical-align: middle;
 }
 
-.centrePanel {
+.searchBox {
+  border-radius: 2px;
+  border-width:thin;
+  background-color:#444444;
+  margin-left:20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  color:white;
+  font-size:14px;
+  line-height: 20px;
+  width:155px;
+}
+
+.middlePanel {
   width: 1080px;
   margin-left:auto;
   margin-right:auto;
   margin-bottom:42px;
 }
+.middleHeader {
+  background-image:url('images/texture-top.png');
+  background-repeat: no-repeat;
+  background-position:bottom center;
+  padding-bottom:72px;
+}
+
+.orgLogo {
+  float:right;
+  margin-top:10px;
+  margin-right:65px;
+}
+
+.menu {
+  text-align: center;
+  margin-right:65px;
+}
 
 .menuItem {
+  display:inline-block;
+  font-family:'Philosopher', sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  margin-left:20px;
-  margin-right:20px;
+  font-size: 22px;
+  margin-left:18px;
+  margin-right:18px;
   padding-left:4px;
   padding-right:4px;
   padding-bottom:1px;
@@ -51,12 +88,7 @@ body {
   border-bottom: 5px solid #c0272c;
 }
 
-.menu {
-  background-image:url('images/texture-top.png');
-  background-repeat: no-repeat;
-  background-position:bottom center;
-  padding-bottom:72px;
-}
+
 
 .main {
   width:100%;
@@ -86,7 +118,7 @@ body {
 .col3 {
   padding-bottom:20px;
   float:left;
-  width:180px;
+  width:205px;
   position:relative;
   left:575px;
 }
@@ -145,6 +177,23 @@ body {
 
 .tag {
   font-family: 'Philosopher', sans-serif;
+}
+
+.socialNetworkLinks h2 {
+  font-family: 'Special Elite', cursive;
+  font-size: 32px;
+
+}
+
+.aboutOrgBlurb {
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #999999
+}
+
+.aboutOrgBlurb p {
+  margin-top:20px;
 }
 
 .footer {
