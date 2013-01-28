@@ -1,0 +1,177 @@
+body {
+  font-family: 'Istok Web', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:30px;
+  background-color: black;
+  color:white;
+  overflow:auto;
+}
+
+.headerItem {
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  float:right;
+  margin-right:10px;
+}
+
+.searchBox {
+  margin-left:20px;
+
+}
+
+.centrePanel {
+  width: 1080px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:42px;
+}
+
+.menuItem {
+  font-weight: 700;
+  font-size: 24px;
+  margin-left:20px;
+  margin-right:20px;
+  padding-left:4px;
+  padding-right:4px;
+  padding-bottom:1px;
+}
+
+.menuSelected {
+  color: #c0272c;
+  border-bottom: 5px solid #c0272c;
+}
+
+.menu {
+  background-image:url('images/texture-top.png');
+  background-repeat: no-repeat;
+  background-position:bottom center;
+  padding-bottom:72px;
+}
+
+.main {
+  width:100%;
+  position:relative;
+  overflow:auto;
+  z-index:-2;
+}
+
+.col1 {
+  float:left;
+  width:555px;
+  position:relative;
+  left:480px;
+  padding-bottom:20px;
+  background-color:white;
+}
+
+.col2 {
+  float:left;
+  width:170px;
+  position:relative;
+  left:530px;
+  color:white;
+  padding-bottom:20px;
+}
+
+.col3 {
+  padding-bottom:20px;
+  float:left;
+  width:180px;
+  position:relative;
+  left:575px;
+}
+
+.container1 {
+  float:left;
+  width:100%;
+  position:relative;
+  right:215px;
+  background-image: url("images/texture-left.png");
+  background-position: right top;
+  background-repeat: repeat-y;
+  background-color:white;
+}
+
+.container2 {
+  float:left;
+  width:100%;
+  background-color:black;
+  right:243px;
+  position:relative;
+  background-image: url("images/texture-right.png");
+  background-position: right top;
+  background-repeat: repeat-y;
+}
+
+.container3 {
+  float:left;
+  width:100%;
+  overflow:hidden;
+  position:relative;
+}
+
+.authorInfo {
+  font-family: 'Philosopher', sans-serif;
+}
+
+.authorName {
+  font-style: italic;
+}
+
+.col2 h2 {
+  font-family: 'Special Elite', cursive;
+  font-size: 36px;
+  color: #c0272c;
+  font-weight:normal;
+}
+
+.col2 .latestArticle {
+  font-family: 'Istok Web', sans-serif;
+}
+
+.col2 .articleTitle {
+  font-weight: 700;
+}
+
+.tag {
+  font-family: 'Philosopher', sans-serif;
+}
+
+.footer {
+  background-color:black;
+  height:200px;
+  position:relative;
+}
+
+.cogs {
+  position:absolute;
+  top:-240px;
+  right:1250px;
+  left:-20px;
+  max-width:309px;
+  height:300px;
+  background-image:url('images/cogs.png');
+  background-position: right top;
+}
+
+.footerDecoration {
+  min-width:1080px;
+  background-image:url("images/texture-bottom.png");
+  background-position:center top;
+  margin-left:auto;
+  margin-right:auto;
+  height:98px;
+  position:relative;
+  top:-98px;
+  z-index:-1;
+}
