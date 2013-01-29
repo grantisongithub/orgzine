@@ -1,10 +1,35 @@
 body {
   font-family: 'Istok Web', sans-serif;
+  font-size:15px;
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  padding-top:0.2em;
+  padding-bottom:0.2em;
+  padding-left:0.2em;
+  padding-right:0.2em;
+}
+
+a:hover {
+  background-color:#c0272c;
+}
+
+h1 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-family: 'Special Elite', cursive;
+  font-size: 32px;
 }
 
 .header {
@@ -34,7 +59,11 @@ body {
   vertical-align: middle;
 }
 
-.searchBox {
+button.headerItemText {
+
+}
+
+.header .searchBox {
   border-radius: 2px;
   border-width:thin;
   background-color:#444444;
@@ -60,6 +89,21 @@ body {
   padding-bottom:72px;
 }
 
+.orgZineLogo {
+  display:inline-block;
+  height:71px;
+  width:391px;
+  background-image:url('images/top-orgzinelogo.png');
+}
+
+.orgZineLogo span {
+  visibility:hidden;
+}
+
+.orgZineLogo:hover {
+  background-image:url('images/top-orgzinelogo-over.png');
+}
+
 .orgLogo {
   float:right;
   margin-top:10px;
@@ -83,11 +127,20 @@ body {
   padding-bottom:1px;
 }
 
-.selected {
+.menuItem a {
+  color:black;
+}
+
+.menuItem.selected a:hover {
+  background-color:white;
+}
+
+.menuItem.selected a {
   color: #c0272c;
 }
 
-.menuItem.selected {
+.menuItem.selected a,
+.menuItem a:hover {
   border-bottom: 5px solid #c0272c;
 }
 
@@ -154,9 +207,104 @@ body {
   position:relative;
 }
 
-h2 {
-  font-family: 'Special Elite', cursive;
-  font-size: 36px;
+
+
+.mainArticle {
+  margin-bottom: 30px;
+}
+
+.col1 a {
+  color:black;
+  font-weight:bold;
+}
+
+.mainArticle h3 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.articleImage {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 25px;
+  margin-top:10px;
+  border:thin solid black;
+}
+
+.mainArticle p {
+  text-align: justify;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+.mainArticle .callout {
+  float: left;
+  width: 47%;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+  color: #999999;
+  font-style: italic;
+  text-align: left;
+  line-height: 140%;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.mainArticle p:last-child:after {
+  content: url('images/endmark.png');
+  height: 12px;
+  display: inline-block;
+  margin-left: -5px;
+}
+
+.col1 .section {
+  margin-bottom:20px;
+}
+
+.col1 .advertTitle {
+  font-family: 'Philosopher', sans-serif;
+}
+
+.advertContainer {
+  float:left;
+  left:50%;
+  position:relative;
+  margin-top:10px;
+}
+
+.advertContainer img {
+  float:left;
+  right:50%;
+  position:relative;
+}
+
+.horizontalTagList {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align:center;
+}
+
+.horizontalTagList li {
+  display:inline-block;
+  background-color:black;
+  padding:5px;
+  margin-left:5px;
+  margin-right:5px;
+  font-family: 'Philosopher', sans-serif;
+  font-size:18px;
+  margin-top:5px;
+}
+
+.horizontalTagList li a {
+  color:white;
+  text-decoration: none;
+}
+
+.horizontalTagList li:hover {
+  background-color: #c0272c;
 }
 
 .authorInfo {
@@ -185,6 +333,10 @@ h2 {
   margin-top:5px;
 }
 
+.col2 a {
+  color:white;
+}
+
 .col2 h2,
 .col3 h2 {
   color: #c0272c;
@@ -208,7 +360,7 @@ h2 {
   font-weight: 700;
 }
 
-.tagList {
+.col2 .tagList {
   font-size:20px;
 }
 
@@ -224,9 +376,6 @@ h2 {
   color: white;
 }
 
-.tag a:hover {
-  color: #c0272c;
-}
 
 .tag.tiny {
   font-size: 60%;
@@ -247,6 +396,11 @@ h2 {
 .featuredArticle h3 {
   font-family: 'Philosopher', sans-serif;
   font-size: 24px;
+}
+
+.featuredArticle h3 a:hover {
+  background-color:inherit;
+  color:#c0272c;
 }
 
 .featuredArticleThumb {
@@ -304,8 +458,8 @@ h2 {
 
 .footer {
   background-color:black;
-  height:200px;
   position:relative;
+  z-index: 1;
 }
 
 .cogs {
@@ -329,8 +483,155 @@ h2 {
   position:relative;
   top:-98px;
   z-index:-1;
+  margin-bottom:-98px;
+}
+
+.footerContent {
+  margin-left:auto;
+  margin-right:auto;
+  width:1080px;
+  color:white;
+  position:relative;
+}
+
+.footerContent h2 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 25px;
+  margin-bottom:20px;
+}
+
+.footerContent h3 {
+  font-family: 'Special Elite', cursive;
+  font-size: 25px;
+  margin-bottom:5px;
+  margin-top: 25px;
+}
+
+.contactEmail {
+  font-family: 'Philosopher', sans-serif;
+}
+
+.footerContent a {
+  font-weight: bold;
+  color:white;
+  text-decoration: none;
+}
+
+.footerContent p {
+  margin-bottom:1em;
+}
+
+.footerHead {
+  height:50px;
+  vertical-align:middle;
+}
+
+a.backToTopLink {
+  color:white;
+  font-weight: bold;
+  font-family: 'Philosopher', sans-serif;
+  font-size:16px;
+  line-height:30px;
+  margin-left:140px;
+}
+
+.backToTopLink:before {
+  display:inline-block;
+  height:30px;
+  margin-right:10px;
+  content: url('images/backtotop-arrow.png');
+}
+
+.backToTopLink:hover:before {
+  content: url('images/backtotop-arrow-over.png');
+}
+
+.bottomOrgZineLogo {
+  float:right;
+}
+
+.footerColumnContainer {
+  position:relative;
+  height:255px;
+  padding-bottom: 20px;
+  padding-top:20px;
+}
+
+.footerCol {
+  float:left;
+  padding-left:30px;
+  padding-right:30px;
+  height:100%;
+  position:relative;
+}
+
+.footerCol1 {
+  width: 230px;
+}
+
+.footerCol2 {
+  width: 400px;
+}
+
+.footerCol3 {
+  width: 260px;
+}
+
+.footerCol1:after,
+.footerCol2:after{
+  content:'';
+  position:absolute;
+  top:10px;
+  right:0;
+  bottom:35px;
+  display:block;
+  z-index: -1;
+  border-right: 1px solid #999999;
+}
+
+.footerContent .searchButton {
+  background-color:black;
+  border-radius: 5px;
+  color:white;
+  padding: 5px;
+  font-size: 16px;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.footerContent .searchBox {
+  font-size:16px;
+  margin-right:10px;
+  width:115px;
+}
+
+.ccInfo img {
+  vertical-align: middle;
+  height:30px;
+  margin-left:20px;
+}
+
+.footerCol3 .section:first-child {
+  border-bottom:thin solid white;
+}
+
+.footerCol3 .section {
+  padding-left:10px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.disclaimer {
+  font-size:13px;
 }
 
 .twtr-tweet-text {
   font-size: 10px;
+}
+
+.twtr-widget a {
+  padding:0;
+}
+
+.twtr-widget a:hover {
+  background-color:inherit;
 }
