@@ -10,10 +10,7 @@ body {
 
 a {
   text-decoration: none;
-  padding-top:0.2em;
-  padding-bottom:0.2em;
-  padding-left:0.2em;
-  padding-right:0.2em;
+  padding: 0.2em;
 }
 
 a:hover {
@@ -225,12 +222,27 @@ button.headerItemText {
 }
 
 .articleImage {
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom: 25px;
-  margin-top:10px;
+  display:inline-block;
+  margin: 10px auto 25px;
   border:thin solid black;
+  position:relative;
+}
+
+.articleImage img {
+  display:block;
+}
+
+.articleImage p.quote {
+  width:100%;
+  position:absolute;
+  bottom: 10px;
+  height:40px;
+  background: rgba(255, 255, 255, 0.5);
+  line-height: 40px;
+  text-align:center;
+  font-family: 'Philosopher', sans-serif;
+  font-style:italic;
+  font-size: 20px;
 }
 
 .mainArticle p {
@@ -253,7 +265,7 @@ button.headerItemText {
   margin-bottom: 15px;
 }
 
-.mainArticle p:last-child:after {
+.mainArticle > p:last-child:after {
   content: url('images/endmark.png');
   height: 12px;
   display: inline-block;
