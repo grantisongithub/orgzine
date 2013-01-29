@@ -83,18 +83,19 @@ body {
   padding-bottom:1px;
 }
 
-.menuSelected {
+.selected {
   color: #c0272c;
-  border-bottom: 5px solid #c0272c;
 }
 
+.menuItem.selected {
+  border-bottom: 5px solid #c0272c;
+}
 
 
 .main {
   width:100%;
   position:relative;
   overflow:auto;
-  z-index:-2;
 }
 
 .col1 {
@@ -153,37 +154,112 @@ body {
   position:relative;
 }
 
+h2 {
+  font-family: 'Special Elite', cursive;
+  font-size: 36px;
+}
+
 .authorInfo {
   font-family: 'Philosopher', sans-serif;
+}
+
+.authorImage {
+  height:150px;
+  width:150px;
+  background-color:white;
+  padding:5px;
+  margin-top:20px;
+  margin-bottom:25px;
 }
 
 .authorName {
   font-style: italic;
 }
 
-.col2 h2 {
-  font-family: 'Special Elite', cursive;
-  font-size: 36px;
+.zineLetters {
+  background-image: url('images/column-zine.jpg');
+  height:131px;
+  width:160px;
+  background-position:top right;
+  background-repeat: no-repeat;
+  margin-top:5px;
+}
+
+.col2 h2,
+.col3 h2 {
   color: #c0272c;
-  font-weight:normal;
+}
+
+.col2 h2 {
+  margin-top:15px;
+  margin-bottom:5px;
+}
+
+.col2 .section {
+  margin-bottom: 50px;
 }
 
 .col2 .latestArticle {
   font-family: 'Istok Web', sans-serif;
+  margin-top:20px;
 }
 
 .col2 .articleTitle {
   font-weight: 700;
 }
 
-.tag {
-  font-family: 'Philosopher', sans-serif;
+.tagList {
+  font-size:20px;
 }
 
-.col3 h2 {
-  font-family: 'Special Elite', cursive;
-  font-size:36px;
+.tag {
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  margin-top:5px;
+  list-style-type: none;
+}
+
+.tag a {
+  text-decoration: none;
+  color: white;
+}
+
+.tag a:hover {
   color: #c0272c;
+}
+
+.tag.tiny {
+  font-size: 60%;
+}
+
+.tag.small {
+  font-size: 80%;
+}
+
+.tag.big {
+  font-size:120%;
+}
+
+.tag.massive {
+  font-size:140%;
+}
+
+.featuredArticle h3 {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 24px;
+}
+
+.featuredArticleThumb {
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.featuredArticle p {
+  font-size: 15px;
+}
+
+
+.col3 h2 {
   margin-top: 50px;
   margin-bottom: 15px;
 }

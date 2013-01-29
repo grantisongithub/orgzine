@@ -11,7 +11,7 @@
     <ul class="headerMenu">
     <li class="headerItem"><span class="headerItemText">About</span></li>
     <li class="headerItem"><span class="headerItemText">Contact</span></li>
-    <li class="headerItem"><input type="text" class="searchBox"/><span class="headerItemText">Search</span></li>
+    <li class="headerItem"><input id="upperSearchBox" type="text" class="searchBox"/><label for="upperSearchBox" class="headerItemText">Search</label></li>
     </ul>
 </div>
 <div class="middlePanel">
@@ -19,7 +19,7 @@
         <img src="images/top-orgzinelogo.png">
         <img src="images/ORGlogo.png" class="orgLogo">
         <ul class="menu">
-            <li class="menuItem menuSelected">Features</li>
+            <li class="menuItem selected">Features</li>
             <li class="menuItem">Reviews</li>
             <li class="menuItem">How to</li>
             <li class="menuItem">Editorial</li>
@@ -154,60 +154,60 @@
                     <div class="col2">
                         <img src="images/column-keys.png">
 
-                        <div class="authorInfo">
+                        <div class="section authorInfo">
                             <p>By Adam and Shivaun Raff on May 30, 2012</p>
 
-                            <div style="height:160px; width:160px; background-color:white;">AUthor image</div>
+                            <div class="authorImage"><img style="height:150px; width:150px; background-color:blue;" src='#'></div>
                             <h2>Author</h2>
 
                             <p><span class="authorName">A. Cat</span>, very interested in digital rights. With an evil
                                 stare for those who don't hanker for open data.</p>
+                            <div class="zineLetters"></div>
                         </div>
-                        <img src="images/column-zine.jpg">
 
-                        <div>
+
+                        <div class="section latestArticles">
                             <h2>Latest Articles</h2>
 
                             <p class="latestArticle"><span class="articleTitle">German Agency Wants to Snoop Social Networks to Analyse Creditworthiness</span>
-                                - problems with online passowrds security</p>
+                                - problems with online password security</p>
 
                             <p class="latestArticle"><span class="articleTitle">Your data, Your decision</span> - The
                                 Tor Project, responds to our series on protecting privacy</p>
                         </div>
-                        <div>
+                        <div class="section">
                             <h2>Tags</h2>
+                            <ul class="tagList">
+                            <li class="tag tiny"><a href="http://www.facebook.com">censorship</a></li>
 
-                            <p class="tag">censorship</p>
+                            <li class="tag"><a href="#">data protection</a></li>
 
-                            <p class="tag">data protection</p>
+                            <li class="tag massive"><a href="#">internet</a></li>
 
-                            <p class="tag">internet</p>
+                            <li class="tag small"><a href="#">Facebook</a></li>
 
-                            <p class="tag">censorship</p>
+                            <li class="tag tiny"><a href="#">tor</a></li>
 
-                            <p class="tag">Facebook</p>
+                            <li class="tag"><a href="#">CCDP</a></li>
 
-                            <p class="tag">tor</p>
+                            <li class="tag big"><a href="#">copyright</a></li>
 
-                            <p class="tag">CCDP</p>
+                            <li class="tag big"><a href="#">digital</a></li>
 
-                            <p class="tag">copyright</p>
+                            <li class="tag massive"><a href="#">privacy</a></li>
 
-                            <p class="tag">digital</p>
+                            <li class="tag small"><a href="#">google</a></li>
 
-                            <p class="tag">privacy</p>
+                            <li class="tag small"><a href="#">Digital Economy Act</a></li>
 
-                            <p class="tag">google</p>
-
-                            <p class="tag">Digital Economy Act</p>
-
-                            <p class="tag">newzbin</p>
+                            <li class="tag tiny"><a href="#">newzbin</a></li>
+                            </ul>
                         </div>
-                        <div>
+                        <div class="section featuredArticle">
                             <h2>Featured Article</h2>
 
                             <h3>Firewalling child rights</h3>
-                            <img src="images/article-thumbnail.jpg">
+                            <img class="featuredArticleThumb" src="images/article-thumbnail.jpg">
 
                             <p>As the gateway to the INternet for the vast majority of users, Google has unparalled
                                 influence</p>
