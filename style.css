@@ -121,6 +121,7 @@ body {
   width:205px;
   position:relative;
   left:575px;
+  font-family: 'Philosopher', sans-serif;
 }
 
 .container1 {
@@ -179,14 +180,25 @@ body {
   font-family: 'Philosopher', sans-serif;
 }
 
-.socialNetworkLinks h2 {
+.col3 h2 {
   font-family: 'Special Elite', cursive;
-  font-size: 32px;
+  font-size:36px;
+  color: #c0272c;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
 
+.socialNetworkLinks {
+  margin-bottom:15px;
+}
+
+.socialNetworkLinks h2 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .aboutOrgBlurb {
-  font-family: 'Philosopher', sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: #999999
@@ -194,6 +206,24 @@ body {
 
 .aboutOrgBlurb p {
   margin-top:20px;
+}
+
+.orgEvents h2 {
+  font-size: 30px;
+}
+
+.event h4 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.event {
+  margin-bottom:15px;
+}
+
+.findOutMore h2 {
+  font-size:26px;
 }
 
 .footer {
@@ -223,4 +253,8 @@ body {
   position:relative;
   top:-98px;
   z-index:-1;
+}
+
+.twtr-tweet-text {
+  font-size: 10px;
 }
